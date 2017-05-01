@@ -27,12 +27,12 @@
     a,
     .mw-body a.external,
     .mw-body a.extiw {
-        color: #e69710
+        color: #e69100
     }
     a:visited,
     .mw-body a.external:visited,
     .mw-body a.extiw:visited {
-        color: #8a794c
+        color: #a87723
     }
     a.new,
     #p-personal a.new {
@@ -93,20 +93,28 @@
     }
     #left-navigation div.vectorTabs,
     #right-navigation div.vectorTabs {
-        background-image: inherit;
-        background-color: #250b2d
+        background-color: #1f1f1f;
+        background-image: -moz-linear-gradient(top,#333 5%,#1f1f1f 60%);
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(5%,#333),color-stop(60%,#1f1f1f));
+        background-image: -webkit-linear-gradient(top,#333 5%,#1f1f1f 60%);
+        background-image: linear-gradient(#333 5%, #1f1f1f 60%)
     }
     #left-navigation div.vectorTabs ul,
     #right-navigation div.vectorTabs ul {
-        background-color: #250b2d
+        background-color: #1f1f1f;
+        background-image: -moz-linear-gradient(top, #333 5%, #1f1f1f 60%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #333),color-stop(60%, #1f1f1f));
+        background-image: -webkit-linear-gradient(top, #333 5%, #1f1f1f 60%);
+        background-image: linear-gradient(#333 5%, #1f1f1f 60%)
     }
     #left-navigation div.vectorTabs ul li,
     #right-navigation div.vectorTabs ul li {
         background-color: #222;
-        background-image: -moz-linear-gradient(top, #2e2e2e 20%, #222 100%);
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #2e2e2e), color-stop(100%, #222));
-        background-image: -webkit-linear-gradient(top, #2e2e2e 20%, #222 100%);
-        background-image: linear-gradient(#2e2e2e 20%, #222 100%)
+        background-image: -moz-linear-gradient(top, #333 20%, #222 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #333),color-stop(100%, #222));
+        background-image: -webkit-linear-gradient(top, #333 20%, #222 100%);
+        background-image: linear-gradient(#333 20%, #222 100%);
+        margin-right: 1px
     }
     #left-navigation div.vectorTabs li.new a,
     #right-navigation div.vectorTabs li.new a,
@@ -117,20 +125,18 @@
     #left-navigation div.vectorTabs li.selected,
     #right-navigation div.vectorTabs li.selected {
         background-color: #333;
-        background-image: -moz-linear-gradient(top, #e69710 0, #333 10%);
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e69710), color-stop(10%, #333));
-        background-image: -webkit-linear-gradient(top, #e69710 0, #333 10%);
-        background-image: linear-gradient(#e69710 0, #333 10%)
+        background-image: none !important;
+        border-bottom: 1px solid #333
     }
     #left-navigation div.vectorTabs li.selected a,
     #right-navigation div.vectorTabs li.selected a,
     #left-navigation div.vectorTabs li.selected a:visited,
     #right-navigation div.vectorTabs li.selected a:visited {
-        color: #8a7f6c
+        color: #a87723
     }
     #left-navigation div.vectorTabs li a,
     #right-navigation div.vectorTabs li a {
-        color: #e69710
+        color: #e69100
     }
     #left-navigation div.vectorTabs span,
     #right-navigation div.vectorTabs span {
@@ -140,7 +146,7 @@
         background: inherit
     }
     div#mw-head div.vectorMenu h3 span {
-        color: #e69710
+        color: #e69100
     }
     div.vectorMenu h3 a {
         background: inherit
@@ -150,11 +156,11 @@
         border: solid 1px #0c0c0c
     }
     div.vectorMenu li a {
-        color: #e69710
+        color: #e69100
     }
     div.vectorMenu li.selected a,
     div.vectorMenu li.selected a:visited {
-        color: #8a7f6c;
+        color: #a87723;
         text-decoration: none
     }
     div.vectorMenu#p-cactions div.menu {
@@ -186,11 +192,11 @@
         background-color: #2a2a2a
     }
     .mw-body {
-        margin-left: 10em;
-        padding: 1em;
-        border: 1px solid #250b2d;
+        margin-left: 11em;
+        padding: 1.25em 1.5em 1.5em 1.5em;
+        border: 1px solid #1f1f1f;
         border-right-width: 0;
-        margin-top: -1px;
+        margin-top: 0;
         background-color: #333;
         color: #c1c1c1;
         direction: ltr
@@ -254,6 +260,9 @@
     pre,
     .mw-code {
         line-height: 1.3em
+        color: #ffffff;
+        background-color: #333 !important;
+        border: 1px solid #ddd;
     }
     #siteNotice {
         font-size: .8em
@@ -359,7 +368,7 @@
         min-height: 1px;
         border: solid 1px #aaa;
         color: black;
-        background-color: white;
+        background-color: #333 !important;
         background-position: top left;
         background-repeat: repeat-x
     }
@@ -367,8 +376,8 @@
         margin: 0;
         padding: 0;
         border: 0;
-        background-color: transparent;
-        color: black
+        color: black;
+        background-color: #333 !important
     }
     div#simpleSearch #searchInput {
         width: 100%;
@@ -467,7 +476,7 @@
         height: 1.9em;
         padding-left: .5em;
         padding-right: .5em;
-        color: #e69710;
+        color: #e69100;
         cursor: pointer;
         font-size: .8em
     }
@@ -573,7 +582,7 @@
         display: inline-block;
         padding: .5em;
         white-space: nowrap;
-        color: #e69710;
+        color: #e69100;
         cursor: pointer;
         font-size: .8em
     }
@@ -694,7 +703,7 @@
     }
     #left-navigation {
         float: left;
-        margin-left: 10em;
+        margin-left: 11em;
         margin-top: 2.5em;
         margin-bottom: -2.5em;
         display: inline
@@ -706,7 +715,7 @@
     #p-logo {
         position: absolute;
         top: -160px;
-        left: 0;
+        left: 0.5em;
         width: 10em;
         height: 160px
     }
@@ -760,10 +769,10 @@
         word-wrap: break-word
     }
     div#mw-panel div.portal div.body ul li a {
-        color: #e69710
+        color: #e69100
     }
     div#mw-panel div.portal div.body ul li a:visited {
-        color: #8a794c
+        color: #a87723
     }
     div#mw-panel div.portal.first {
         background-image: none;
@@ -776,7 +785,7 @@
         margin-left: .5em
     }
     div#footer {
-        margin-left: 10em;
+        margin-left: 11em;
         margin-top: 0;
         padding: .75em;
         direction: ltr
@@ -820,85 +829,124 @@
         background-repeat: no-repeat;
         padding-right: 13px;
     }
-    /* CODE SPESIFIC TO FACTORIO PLACED HERE */
+    /* CODE SPECIFIC TO FACTORIO PLACED HERE */
     /* For the ContentCell Template */
     .factorio-contentcell {
-        background: #333 !important;
+        background: #333 !important
     }
     .factorio-contentcell .titlebar {
         background: #3d3d3d;
         color: #c1c1c1 !important;
-        font-size: 120%;
+        font-size: 120%
     }
     /* Languages container on the main page */
     .languages-container {
-        background: #333;
+        background: #333
+    }
+    .languages-container p {
+        margin: 0 !important
     }
     /* Search Widget on the top of the page */
-    div#simpleSearch input {
-        background-color: #333 !important;
+    .suggestions a.mw-searchSuggest-link {
+        color: #c1c1c1
     }
-    #simpleSearch {
-        background-color: #333 !important;
+    .suggestions a.mw-searchSuggest-link:hover, .suggestions a.mw-searchSuggest-link:active, .suggestions a.mw-searchSuggest-link:focus {
+        color: #d7d7d7
     }
-    #searchInput {
-        color: #ffffff !important;
+    .suggestions-results {
+        background-color: #4c4c4c
+    }
+    .suggestions-result {
+        color: #c1c1c1
+    }
+    .suggestions-special {
+        background-color: #4c4c4c;
+        color: #c1c1c1
+    }
+    .suggestions-result-current {
+        background-color: #595959;
+        color: #d7d7d7
+    }
+    .suggestions-result-current .special-label, .suggestions-result-current .special-query {
+        color: #d7d7d7
+    }
+    .suggestions-special .special-query {
+        color: #c1c1c1;
+    }
+    div#simpleSearch #searchInput {
+        color: #c1c1c1 !important;
     }
     /* Search page */
     .mw-search-profile-tabs {
-        background: #333 !important;
+        background: #333 !important
     }
     .search-types .current a {
-        color: #c1c1c1 !important;
+        color: #c1c1c1 !important
     }
     .oo-ui-textInputWidget input,
     .oo-ui-textInputWidget textarea {
         background-color: #333 !important;
         color: #c1c1c1 !important;
-        box-shadow: inset 0 0 0 0.1em #C0C0C0 !important;
+        box-shadow: inset 0 0 0 0.1em #C0C0C0 !important
     }
     .oo-ui-widget.oo-ui-widget-enabled input:focus {
-        border-color: #cb662e;
+        border-color: #cb662e
     }
     .oo-ui-menuSelectWidget {
         background-color: #333;
         border: 1px solid #a2a9b1;
         border-radius: 0 0 2px 2px;
-        box-shadow: 0 0.15em 0 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0.15em 0 0 rgba(0, 0, 0, 0.15)
     }
     .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button {
         color: #333;
         background-color: #cb662e;
-        border-color: #cb662e;
+        border-color: #cb662e
     }
     /* --- Navbox --- */
+    .navbox {
+        padding-bottom: 5px
+    }
     .navbox th {
-        background: #4c4c4c;
-        border-radius: 10px;
+        background: #1c1c1c;
+        border-radius: 2px 2px 0px 0px
     }
     .navbox .navbox-header {
-        background: #4c4c4c !important;
-        color: #c1c1c1 !important;
+        background: #2a2a2a !important;
+        color: #c1c1c1 !important
     }
     .navbox .list-data {
         background: #3a3939 !important;
+        border-radius: 0px 2px 2px 0px
     }
     .navbox .group-data {
-        background: #1c1c1c !important;
-        border-bottom-width: 4px;
-        border-color: #1c1c1c;
+        background: #4c4c4c !important;
+        border-radius: 2px 0px 0px 2px;
+         font-weight: bold
     }
     .navbox p {
         margin: 0 !important;
     }
+    .navbox-inner {
+         background: #a87723;
+         border: 2px solid #e69100;
+         border-radius: 5px 5px 5px 5px
+    }
     /* Boilerplate */
     .boilerplate {
-        background-color: #1c1c1c !important;
+        background-color: #1c1c1c !important
     }
     a.new {
-        font-style: italic;
+        font-style: italic
     }
     /* --- Infobox --- */
+    .infobox {
+        margin-bottom: 5px;
+        border-radius: 3px 3px 0 0
+    }
+    .infobox .infobox-header {
+        border-radius: 3px 3px 0 0
+    }
     .infobox .combat {
         background: #611616;
         color: #c1c1c1;
@@ -986,13 +1034,6 @@
     .previewnote {
         color: #caaee8 !important;
     }
-    /* Code View */
-    pre,
-    .mw-code {
-        color: #ffffff;
-        background-color: #333 !important;
-        border: 1px solid #ddd;
-    }
     /* DataTable Fix */
     .mw-datatable th {
         background-color: #4c4c4c !important;
@@ -1049,23 +1090,51 @@
         background: #595959;
     }
     ul.tabbernav li a:link {
-        color: #e69710;
+        color: #e69100;
     }
     ul.tabbernav li.tabberactive a {
         background-color: #333;
         border-bottom: 1px solid #333;
     }
     ul.tabbernav li a:hover {
-        color: #e69710 !important;
+        color: #e69100 !important;
         background: #c1c1c1 !important;
         border-bottom: 1px solid #c1c1c1 !important;
     }
     ul.tabbernav li a:visited {
-        color: #8a794c;
+        color: #a87723;
     }
     /* fix for things with table of content colors that arent TOCs eg collapsible on balancer page */
     .toccolours {
         border-color: #666;
         background-color: #4c4c4c;
     }
+    /* Recent changes top box */
+    .fieldset {
+        border: 1px solid #141414;
+    }
+    /* Watch/unwatch icon */
+    #ca-watch.icon a {
+         background-image: linear-gradient(transparent,transparent),
+             url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Cpath%20d%3D%22M8.103%201.146l2.175%204.408%204.864.707-3.52%203.431.831%204.845-4.351-2.287-4.351%202.287.831-4.845-3.52-3.431%204.864-.707z%22%20fill%3D%22%23333%22%20stroke%3D%22%23e69100%22%20stroke-width%3D%220.9999199999999999%22%2F%3E%3C%2Fsvg%3E)
+    }
+     #ca-watch.icon a:hover, #ca-watch.icon a:focus {
+         background-image: linear-gradient(transparent,transparent),
+             url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Cpath%20d%3D%22M8.103%201.146l2.175%204.408%204.864.707-3.52%203.431.831%204.845-4.351-2.287-4.351%202.287.831-4.845-3.52-3.431%204.864-.707z%22%20fill%3D%22%23826f4e%22%20stroke%3D%22%23e69100%22%20stroke-width%3D%220.9999199999999999%22%2F%3E%3C%2Fsvg%3E)
+    }
+     #ca-unwatch.icon a {
+         background-image: linear-gradient(transparent,transparent),
+             url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Cpath%20d%3D%22M8.103%201.146l2.175%204.408%204.864.707-3.52%203.431.831%204.845-4.351-2.287-4.351%202.287.831-4.845-3.52-3.431%204.864-.707z%22%20fill%3D%22%23e69100%22%20stroke%3D%22%23e69100%22%20stroke-width%3D%220.9999199999999999%22%2F%3E%3C%2Fsvg%3E)
+    }
+    #ca-unwatch.icon a:hover, #ca-unwatch.icon a:focus {
+         background-image: linear-gradient(transparent,transparent),
+             url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Cpath%20d%3D%22M8.103%201.146l2.175%204.408%204.864.707-3.52%203.431.831%204.845-4.351-2.287-4.351%202.287.831-4.845-3.52-3.431%204.864-.707z%22%20fill%3D%22%23e69100%22%20stroke%3D%22%23e69100%22%20stroke-width%3D%220.9999199999999999%22%2F%3E%3C%2Fsvg%3E)
+    }
+    /* Recent changes byte colors */
+    .mw-plusminus-pos {
+        color: #0c870c
+    }
+    .mw-plusminus-neg {
+        color: #db1f1f
+    } 
 }
