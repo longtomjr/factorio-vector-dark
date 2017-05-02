@@ -1154,8 +1154,9 @@
     .mw-plusminus-neg {
         color: #db1f1f
     } 
-    /* Selector list */
-    .mw-input {
+    /* Selector lists */
+    select {
+	color: #c1c1c1;
         background-color: #4c4c4c
     }
 }
