@@ -877,8 +877,12 @@
         color: #c1c1c1 !important;
     }
     /* Search page */
+    #mw-searchoptions {
+        background-color: #4c4c4c;
+        border-color: #c0c0c0
+    }
     .mw-search-profile-tabs {
-        background: #333 !important
+        background: #595959 !important
     }
     .search-types .current a {
         color: #c1c1c1 !important
@@ -890,7 +894,7 @@
         box-shadow: inset 0 0 0 0.1em #C0C0C0 !important
     }
     .oo-ui-widget.oo-ui-widget-enabled input:focus {
-        border-color: #cb662e
+        border-color: #72777d
     }
     .oo-ui-menuSelectWidget {
         background-color: #333;
@@ -898,10 +902,23 @@
         border-radius: 0 0 2px 2px;
         box-shadow: 0 0.15em 0 0 rgba(0, 0, 0, 0.15)
     }
+    .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted {
+	    background-color: #4c4c4c
+    }
+    .oo-ui-menuOptionWidget.oo-ui-optionWidget-selected {
+	    background-color: #4c4c4c
+    }
+    .oo-ui-menuOptionWidget.oo-ui-optionWidget > .oo-ui-labelElement-label {
+        color: #e69100
+    }
     .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button {
-        color: #333;
-        background-color: #cb662e;
-        border-color: #cb662e
+        color: #2a2a2a;
+        background-color: #a87723;
+        border-color: #a87723
+    }
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover {
+        background-color: #e69100;
+        border-color: #e69100
     }
     /* --- Navbox --- */
     .navbox {
@@ -1110,7 +1127,7 @@
         background-color: #4c4c4c;
     }
     /* Recent changes top box */
-    .fieldset {
+    fieldset {
         border: 1px solid #141414;
     }
     /* Watch/unwatch icon */
