@@ -1,7 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("wiki.factorio.com") {
     /* FOLLOWING IS COMPILED CSS TAKEN FROM https://www.mediawiki.org/wiki/Skin:Vector-DarkCSS */
-    /* CSS placed here will affect users of the Vector skin */
+    /* CSS placed here will affect users of the Vectordark skin */
     /* Override Vector colour scheme to make it dark (compiled from modified LESS code) */
     h1,
     h2,
